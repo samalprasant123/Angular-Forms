@@ -24,7 +24,8 @@
               name="email"
               required
               email
-              ngNativeValidate>
+              #email="ngModel">
+              <span class="help-block" *ngIf="email.invalid && email.touched">Please enter a valid email!</span>
           </div>
         </div>
         <div class="form-group">
