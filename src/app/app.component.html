@@ -51,6 +51,10 @@
                 class="form-control" 
                 [formControlName]="i">
             </div>
+            <div class="list-group"
+              *ngFor="let hobbyControl of getHobbies(); let i = index">
+              <li>{{ hobbyControl.value }}</li>
+            </div>
         </div>
 
         <span 
